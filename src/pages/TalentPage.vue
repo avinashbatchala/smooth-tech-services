@@ -13,7 +13,7 @@
         <div class="talent-grid">
           <div class="talent-content">
             <h2>Expert Talent On Demand</h2>
-            <p>TechConsult connects businesses with highly-skilled technology professionals across various disciplines. Whether you need a full team for a major project or specialized expertise for a specific challenge, we have the talent network to meet your needs.</p>
+            <p>SmoothTech connects businesses with highly-skilled technology professionals across various disciplines. Whether you need a full team for a major project or specialized expertise for a specific challenge, we have the talent network to meet your needs.</p>
             <p>Our rigorous vetting process ensures that you only work with top-tier professionals who bring both technical excellence and business acumen to your projects.</p>
             <div class="talent-stats">
               <div class="stat-item">
@@ -107,7 +107,7 @@
         <div class="testimonials-slider">
           <div class="testimonial-card">
             <div class="testimonial-content">
-              <p>"TechConsult helped us build our engineering team from scratch. The quality of talent they provided allowed us to accelerate our product roadmap by months."</p>
+              <p>"SmoothTech helped us build our engineering team from scratch. The quality of talent they provided allowed us to accelerate our product roadmap by months."</p>
             </div>
             <div class="testimonial-author">
               <img src="https://via.placeholder.com/60x60" alt="Client headshot" class="author-image">
@@ -119,7 +119,7 @@
           </div>
           <div class="testimonial-card">
             <div class="testimonial-content">
-              <p>"We needed specialized expertise in machine learning for a critical project. TechConsult matched us with the perfect candidate within days, and the results exceeded our expectations."</p>
+              <p>"We needed specialized expertise in machine learning for a critical project. SmoothTech matched us with the perfect candidate within days, and the results exceeded our expectations."</p>
             </div>
             <div class="testimonial-author">
               <img src="https://via.placeholder.com/60x60" alt="Client headshot" class="author-image">
@@ -147,6 +147,7 @@
 
 <script>
 import Banner from '@/components/common/Banner.vue';
+import '@/assets/styles/pages/TalentPage.css'
 
 export default {
   name: 'TalentPage',
@@ -155,204 +156,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.talent-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-
-.talent-image img {
-  width: 100%;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-md);
-}
-
-.talent-stats {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  line-height: 1;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
-
-.expertise-section {
-  background-color: var(--color-light);
-}
-
-.expertise-card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  height: 100%;
-  box-shadow: var(--shadow-sm);
-}
-
-.expertise-icon {
-  background-color: var(--color-primary);
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.process-section {
-  padding: 5rem 0;
-}
-
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  position: relative;
-}
-
-.process-steps::before {
-  content: '';
-  position: absolute;
-  top: 2.5rem;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: var(--color-primary);
-  z-index: 0;
-}
-
-.process-step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.step-number {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.testimonials-section {
-  background-color: var(--color-light);
-}
-
-.testimonials-slider {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-.testimonial-card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-}
-
-.testimonial-content {
-  font-style: italic;
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.testimonial-content p {
-  position: relative;
-  z-index: 1;
-}
-
-.testimonial-content::before {
-  content: '"';
-  position: absolute;
-  top: -20px;
-  left: -10px;
-  font-size: 5rem;
-  color: rgba(0, 0, 0, 0.05);
-  font-family: serif;
-  z-index: 0;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-}
-
-.author-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-
-.author-info h4 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.author-info p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--color-text-light);
-}
-
-@media (max-width: 992px) {
-  .talent-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .process-steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .process-steps::before {
-    display: none;
-  }
-
-  .testimonials-slider {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .talent-stats {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .process-steps {
-    grid-template-columns: 1fr;
-  }
-}
-</style>

@@ -1,0 +1,327 @@
+/* src/assets/styles/pages/AboutPage.css */
+
+/* Ensure consistency with HomePage.css variables */
+:root {
+  /* Core colors - adding here as a fallback */
+  --color-primary: #FFFFFF;        /* Clean white base */
+  --color-accent: #FFB72B;         /* Vibrant amber - happiness-inducing yet subtle */
+  --color-dark: #1A1A1A;           /* Rich black for contrast */
+  --color-light: #F8F8F8;          /* Soft white for backgrounds */
+  --color-gray-90: #252525;
+  --color-gray-60: #666666;
+  --color-gray-20: #E0E0E0;
+  --color-gray-10: #F2F2F2;
+}
+
+.about-page {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+}
+
+/* Page header section - fixing overlay issue */
+.page-header {
+  position: relative;
+  background-color: var(--color-dark);
+  padding: calc(var(--grid-unit) * 20) 0 calc(var(--grid-unit) * 10);
+  color: var(--color-primary);
+  overflow: hidden;
+}
+
+.page-header h1 {
+  color: var(--color-primary); /* Explicitly setting text color */
+  position: relative;
+  z-index: 2;
+}
+
+.page-header p {
+  color: rgba(255, 255, 255, 0.9); /* Explicitly setting text color */
+  position: relative;
+  z-index: 2;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+  margin-bottom: calc(var(--grid-unit) * 2);
+  color: var(--color-primary);
+}
+
+.page-subtitle {
+  font-family: var(--font-primary);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  max-width: 600px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Main content sections - ensuring white background */
+.section {
+  padding: calc(var(--grid-unit) * 12) 0;
+  border-bottom: 1px solid var(--color-gray-10);
+  background-color: var(--color-primary); /* Adding explicit background color */
+}
+
+.section-tag {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gray-60);
+  position: relative;
+  padding-left: calc(var(--grid-unit) * 3);
+  margin-bottom: calc(var(--grid-unit) * 2);
+  display: inline-block;
+}
+
+.section-tag::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(var(--grid-unit) * 2);
+  height: 1px;
+  background-color: var(--color-accent);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  letter-spacing: -0.02em;
+  margin-bottom: calc(var(--grid-unit) * 8);
+  color: var(--color-dark);
+  text-align: center;
+}
+
+/* About intro grid with responsive design - fixing potential blue overlay */
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: calc(var(--grid-unit) * 6);
+  align-items: center;
+  margin-bottom: calc(var(--grid-unit) * 6);
+}
+
+.about-content h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  letter-spacing: -0.02em;
+  margin-bottom: calc(var(--grid-unit) * 4);
+  color: var(--color-dark);
+}
+
+.about-content p {
+  margin-bottom: calc(var(--grid-unit) * 3);
+  color: var(--color-gray-60);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.about-content .highlight {
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-gray-20);
+  object-fit: cover; /* Ensuring proper image display */
+}
+
+/* Values section with refined cards - explicitly setting background color */
+.values-section {
+  background-color: var(--color-light) !important; /* Using !important to override any potential conflicting styles */
+}
+
+.grid {
+  display: grid;
+  gap: calc(var(--grid-unit) * 3);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.value-card {
+  background-color: var(--color-primary);
+  padding: calc(var(--grid-unit) * 5);
+  border-radius: 2px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  border: 1px solid var(--color-gray-10);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  border-color: var(--color-gray-20);
+}
+
+.value-icon {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  width: calc(var(--grid-unit) * 7);
+  height: calc(var(--grid-unit) * 7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto calc(var(--grid-unit) * 3);
+  font-size: 1.25rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+/* Fix for missing icons */
+.icon-integrity::before,
+.icon-excellence::before,
+.icon-innovation::before {
+  content: "●"; /* Adding a default content for icons if they're missing */
+}
+
+.value-card h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: calc(var(--grid-unit) * 2);
+  color: var(--color-dark);
+}
+
+.value-card p {
+  color: var(--color-gray-60);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Team section with refined styling - explicitly setting background */
+.team-section {
+  background-color: var(--color-primary) !important;
+}
+
+.team-member {
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: calc(var(--grid-unit) * 3);
+  border-radius: 2px;
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+}
+
+.team-photo {
+  width: 100%;
+  max-width: 200px; /* Limiting size for better display */
+  height: auto;
+  aspect-ratio: 1/1; /* Ensuring square photos */
+  border-radius: 50%;
+  margin-bottom: calc(var(--grid-unit) * 3);
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid var(--color-gray-10);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  object-fit: cover; /* Ensuring proper image display */
+}
+
+.team-member:hover .team-photo {
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: calc(var(--grid-unit) * 1);
+  color: var(--color-dark);
+}
+
+.team-title {
+  color: var(--color-accent);
+  font-weight: 500;
+  margin-bottom: calc(var(--grid-unit) * 2);
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.team-bio {
+  color: var(--color-gray-60);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* CTA section refined for consistency */
+.cta-section {
+  padding: calc(var(--grid-unit) * 12) 0;
+  background-color: var(--color-light) !important;
+  border-bottom: none;
+}
+
+/* Adding utility class for margins that seemed to be used in the template */
+.mt-5 {
+  margin-top: calc(var(--grid-unit) * 5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: calc(var(--grid-unit) * 8);
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: calc(var(--grid-unit) * 8) 0;
+  }
+
+  .page-header {
+    padding: calc(var(--grid-unit) * 16) 0 calc(var(--grid-unit) * 8);
+  }
+}

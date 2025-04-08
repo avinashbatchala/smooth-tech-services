@@ -80,7 +80,7 @@
 
     <section class="section why-join-section">
       <div class="container">
-        <h2 class="section-title">Why Join TechConsult</h2>
+        <h2 class="section-title">Why Join SmoothTech</h2>
         <div class="grid grid-3">
           <div class="benefit-card">
             <div class="benefit-icon">
@@ -115,7 +115,7 @@
           </div>
           <div class="culture-content">
             <h2>Our Culture</h2>
-            <p>At TechConsult, we believe in creating an environment where innovation thrives and every team member can make a meaningful impact. We celebrate diversity of thought, background, and experience as essential elements of our success.</p>
+            <p>At SmoothTech, we believe in creating an environment where innovation thrives and every team member can make a meaningful impact. We celebrate diversity of thought, background, and experience as essential elements of our success.</p>
             <p>Our collaborative culture encourages knowledge sharing, mentorship, and continuous improvement. We invest in our people because we know that their growth drives our growth.</p>
             <router-link to="/about" class="btn btn-outline mt-3">Learn More About Us</router-link>
           </div>
@@ -137,6 +137,7 @@
 
 <script>
 import Banner from '@/components/common/Banner.vue';
+import '@/assets/styles/pages/JobsPage.css';
 
 export default {
   name: 'JobsPage',
@@ -258,177 +259,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.filter-section {
-  padding-top: 2rem;
-  padding-bottom: 0;
-}
-
-.jobs-filter {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.filter-controls {
-  display: flex;
-  gap: 1rem;
-}
-
-.job-card {
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.job-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-}
-
-.job-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.job-type {
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-.job-type.full-time {
-  background-color: var(--color-success-light);
-  color: var(--color-success);
-}
-
-.job-type.part-time {
-  background-color: var(--color-warning-light);
-  color: var(--color-warning);
-}
-
-.job-type.contract {
-  background-color: var(--color-info-light);
-  color: var(--color-info);
-}
-
-.job-meta {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  color: var(--color-text-light);
-}
-
-.job-meta i {
-  margin-right: 0.3rem;
-}
-
-.job-description {
-  margin-bottom: 1rem;
-}
-
-.job-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.skill-tag {
-  background-color: var(--color-light);
-  color: var(--color-text);
-  padding: 0.2rem 0.6rem;
-  border-radius: var(--border-radius-sm);
-  font-size: 0.8rem;
-}
-
-.job-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.job-posted {
-  font-size: 0.85rem;
-  color: var(--color-text-light);
-}
-
-.no-jobs {
-  margin: 2rem 0;
-}
-
-.why-join-section {
-  background-color: var(--color-light);
-}
-
-.benefit-card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  text-align: center;
-  height: 100%;
-  box-shadow: var(--shadow-sm);
-}
-
-.benefit-icon {
-  background-color: var(--color-primary);
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 1.5rem;
-}
-
-.culture-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-
-.culture-image img {
-  width: 100%;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-md);
-}
-
-@media (max-width: 992px) {
-  .filter-controls {
-    flex-direction: column;
-  }
-
-  .culture-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .job-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .job-meta {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .job-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-}
-</style>

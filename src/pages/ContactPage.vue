@@ -138,7 +138,7 @@
               </div>
               <div class="info-content">
                 <h3>Email</h3>
-                <p><a href="mailto:info@techconsult.com">info@techconsult.com</a></p>
+                <p><a href="mailto:info@SmoothTech.com">info@SmoothTech.com</a></p>
                 <p>We'll respond within 24 hours</p>
               </div>
             </div>
@@ -188,6 +188,7 @@
 
 <script>
 import Banner from '@/components/common/Banner.vue';
+import '@/assets/styles/pages/ContactPage.css'
 
 export default {
   name: 'ContactPage',
@@ -282,162 +283,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.contact-grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 3rem;
-}
-
-.contact-form-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-check {
-  padding-left: 1.5rem;
-}
-
-.form-check-input {
-  margin-top: 0.25rem;
-  margin-left: -1.5rem;
-}
-
-.invalid-feedback {
-  color: var(--color-danger);
-  font-size: 0.875rem;
-  margin-top: 0.25rem;
-}
-
-.is-invalid {
-  border-color: var(--color-danger);
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.info-card {
-  display: flex;
-  gap: 1rem;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-}
-
-.info-icon {
-  background-color: var(--color-primary);
-  color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  flex-shrink: 0;
-}
-
-.info-content h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.info-content p {
-  margin: 0;
-}
-
-.info-content p + p {
-  margin-top: 0.25rem;
-}
-
-.social-media {
-  margin-top: 1.5rem;
-}
-
-.social-icons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.social-icons a {
-  background-color: var(--color-light);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text);
-  transition: all 0.2s ease;
-}
-
-.social-icons a:hover {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-.map-section {
-  padding: 0;
-}
-
-.location-map {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.faq-section {
-  background-color: var(--color-light);
-}
-
-.faqs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.faq-item {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-sm);
-  height: 100%;
-}
-
-.faq-item h3 {
-  font-size: 1.1rem;
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--color-primary);
-}
-
-@media (max-width: 992px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .faqs {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .faqs {
-    grid-template-columns: 1fr;
-  }
-}
-</style>

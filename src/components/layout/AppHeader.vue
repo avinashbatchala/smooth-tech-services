@@ -1,13 +1,21 @@
-<!-- src/components/layout/AppHeader.vue -->
 <template>
   <header class="header">
     <div class="container">
       <div class="logo">
         <router-link to="/">
-          <h1>TechConsult</h1>
+          <div class="logo-mark">TC</div>
+          <span class="logo-text">SmoothTech</span>
         </router-link>
       </div>
       <navigation />
+      <div class="header-actions">
+        <a href="#" class="btn-icon-only">
+          <span class="icon">□</span>
+        </a>
+        <router-link to="/contact" class="btn-outline-small">
+          Contact
+        </router-link>
+      </div>
     </div>
   </header>
 </template>
@@ -19,33 +27,26 @@ export default {
   name: 'AppHeader',
   components: {
     Navigation
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }
   }
 }
 </script>
 
-<style scoped>
-.header {
-  background-color: var(--color-primary);
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo a {
-  text-decoration: none;
-  color: white;
-}
-
-.logo h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
+<style>
+@import '../../assets/styles/components/AppHeader.css';
 </style>

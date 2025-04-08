@@ -1,72 +1,105 @@
-<!-- src/pages/HomePage.vue -->
 <template>
   <div class="home-page">
     <section class="hero-section">
+      <div class="gradient-overlay"></div>
       <div class="container">
         <div class="hero-content">
-          <h1>Innovative Tech Solutions for Your Business</h1>
-          <p class="hero-subtitle">We connect businesses with exceptional tech talent and provide cutting-edge consulting services</p>
-          <div class="hero-buttons">
-            <router-link to="/find-talent" class="btn">Find Talent</router-link>
-            <router-link to="/find-job" class="btn btn-outline">Find Job</router-link>
+          <div class="welcome-card">
+            <span class="tag-label">Welcome</span>
+            <h1>Tech Solutions <span class="accent-text">That Inspire</span></h1>
+            <p class="hero-subtitle">Connecting visionaries with exceptional tech talent</p>
+            <div class="action-buttons">
+              <router-link to="/find-talent" class="btn btn-primary">
+                <span class="btn-icon">●</span>
+                Discover Talent
+              </router-link>
+              <router-link to="/find-job" class="btn btn-secondary">
+                <span class="btn-icon">○</span>
+                Start Creating
+              </router-link>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services-section section">
+    <section class="services-section">
       <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <div class="grid grid-3">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="icon-consulting"></i>
+        <span class="section-tag">Our offerings</span>
+        <h2>How can we help you?</h2>
+
+        <div class="services-grid">
+          <div class="service-module">
+            <div class="service-icon consulting">
+              <span>01</span>
             </div>
             <h3>Tech Consulting</h3>
-            <p>Expert advice on digital transformation, cloud migration, and technology strategy.</p>
+            <p>Strategic advice on digital transformation and technology implementation</p>
+            <router-link to="/services/consulting" class="link-forward">
+              Explore
+              <span class="arrow">→</span>
+            </router-link>
           </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="icon-talent"></i>
+
+          <div class="service-module">
+            <div class="service-icon talent">
+              <span>02</span>
             </div>
             <h3>Talent Sourcing</h3>
-            <p>Connect with skilled professionals for permanent, contract, or project-based work.</p>
+            <p>Connect with skilled professionals for your next breakthrough project</p>
+            <router-link to="/services/talent" class="link-forward">
+              Explore
+              <span class="arrow">→</span>
+            </router-link>
           </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="icon-development"></i>
+
+          <div class="service-module">
+            <div class="service-icon development">
+              <span>03</span>
             </div>
             <h3>Custom Development</h3>
-            <p>End-to-end software development services tailored to your business needs.</p>
+            <p>Tailored software solutions engineered to solve your specific challenges</p>
+            <router-link to="/services/development" class="link-forward">
+              Explore
+              <span class="arrow">→</span>
+            </router-link>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="testimonial-section section">
+    <section class="testimonial-section">
       <div class="container">
-        <h2 class="section-title">What Our Clients Say</h2>
-        <div class="testimonial">
-          <div class="testimonial-content">
-            <p>"TechConsult helped us find the perfect development team for our startup. The quality of talent and service exceeded our expectations."</p>
-          </div>
-          <div class="testimonial-author">
-            <img src="https://via.placeholder.com/60" alt="Jane Smith" class="testimonial-avatar">
-            <div>
-              <h4>Jane Smith</h4>
-              <p>CEO, InnovateTech</p>
+        <div class="testimonial-module">
+          <span class="section-tag">What people say</span>
+          <h2>Client Feedback</h2>
+          <div class="quote-panel">
+            <div class="quote-content">
+              <p>"SmoothTech helped us find the perfect development team. Their talent selection process is unmatched."</p>
+              <div class="author-info">
+                <div class="author-image">
+                  <img src="https://via.placeholder.com/60" alt="Jane Smith">
+                </div>
+                <div class="author-details">
+                  <h4>Jane Smith</h4>
+                  <p>CEO, InnovateTech</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-section section">
+    <section class="cta-section">
       <div class="container">
-        <div class="cta-content">
-          <h2>Ready to transform your business?</h2>
-          <p>Get in touch with our expert team today and discover how we can help you achieve your goals.</p>
-          <router-link to="/contact" class="btn btn-lg">Contact Us</router-link>
+        <div class="cta-module">
+          <h2>Ready to transform your tech approach?</h2>
+          <p>Our team is ready to help you navigate the next steps</p>
+          <router-link to="/contact" class="btn btn-highlight">
+            <span class="btn-icon">◆</span>
+            Let's Talk
+          </router-link>
         </div>
       </div>
     </section>
@@ -74,109 +107,8 @@
 </template>
 
 <script>
+import '@/assets/styles/pages/HomePage.css'
 export default {
   name: 'HomePage'
 }
 </script>
-
-<style scoped>
-.hero-section {
-  background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.9)), url('https://via.placeholder.com/1920x600') no-repeat center center;
-  background-size: cover;
-  color: white;
-  padding: 6rem 0;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.services-section {
-  background-color: var(--color-light);
-}
-
-.service-card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-}
-
-.service-icon {
-  background-color: var(--color-primary);
-  color: white;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 1.75rem;
-}
-
-.testimonial {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.testimonial-content {
-  background-color: white;
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-md);
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-style: italic;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.testimonial-avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-
-.cta-section {
-  background-color: var(--color-primary);
-  color: white;
-  text-align: center;
-}
-
-.cta-content {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.cta-content p {
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-}
-</style>
