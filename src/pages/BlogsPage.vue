@@ -92,6 +92,7 @@
 <script>
 import Banner from '@/components/common/Banner.vue';
 import '@/assets/styles/pages/BlogsPage.css'
+import aiImage from '@/assets/images/pages/blog/ai.png'
 
 export default {
   name: 'BlogsPage',
@@ -113,7 +114,7 @@ export default {
           date: '2023-06-15',
           category: 'Technology',
           excerpt: 'Exploring how artificial intelligence is transforming the recruitment landscape and what it means for businesses.',
-          image: 'https://via.placeholder.com/400x250'
+          image: aiImage
         },
         {
           id: 2,
@@ -122,7 +123,7 @@ export default {
           date: '2023-05-22',
           category: 'Career',
           excerpt: 'A deep dive into the most in-demand skills that technology consultants need to stay competitive in today\'s market.',
-          image: 'https://via.placeholder.com/400x250'
+          image: aiImage
         },
         {
           id: 3,
@@ -131,7 +132,7 @@ export default {
           date: '2023-04-10',
           category: 'Leadership',
           excerpt: 'Best practices for creating, managing, and nurturing high-performing remote technology teams.',
-          image: 'https://via.placeholder.com/400x250'
+          image: aiImage
         },
         {
           id: 4,
@@ -140,7 +141,7 @@ export default {
           date: '2023-03-28',
           category: 'Technology',
           excerpt: 'A comprehensive guide to planning and executing successful cloud migrations for large organizations.',
-          image: 'https://via.placeholder.com/400x250'
+          image: aiImage
         },
         {
           id: 5,
@@ -149,7 +150,7 @@ export default {
           date: '2023-02-14',
           category: 'Industry',
           excerpt: 'How the contract-to-hire model is changing employment patterns in the tech industry.',
-          image: 'https://via.placeholder.com/400x250'
+          image: aiImage
         },
         // Additional blog posts would be added here
       ]

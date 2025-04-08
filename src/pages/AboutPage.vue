@@ -70,27 +70,27 @@
         <h2 class="section-title">Meet Our Leadership Team</h2>
         <div class="grid grid-4">
           <div class="team-member">
-            <img src="https://via.placeholder.com/300x300" alt="John Doe" class="team-photo">
+            <img src="@/assets/images/pages/about/user.png" alt="John Doe" class="team-photo">
             <h3>John Doe</h3>
             <p class="team-title">CEO & Founder</p>
             <p class="team-bio">John brings over 20 years of experience in technology and business
               leadership.</p>
           </div>
           <div class="team-member">
-            <img src="https://via.placeholder.com/300x300" alt="Sarah Johnson" class="team-photo">
+            <img src="@/assets/images/pages/about/user.png" alt="Sarah Johnson" class="team-photo">
             <h3>Sarah Johnson</h3>
             <p class="team-title">CTO</p>
             <p class="team-bio">Sarah leads our technical strategy with expertise in emerging
               technologies.</p>
           </div>
           <div class="team-member">
-            <img src="https://via.placeholder.com/300x300" alt="Michael Chen" class="team-photo">
+            <img src="@/assets/images/pages/about/user.png" alt="Michael Chen" class="team-photo">
             <h3>Michael Chen</h3>
             <p class="team-title">Director of Talent</p>
             <p class="team-bio">Michael oversees our talent acquisition and placement programs.</p>
           </div>
           <div class="team-member">
-            <img src="https://via.placeholder.com/300x300" alt="Lisa Taylor" class="team-photo">
+            <img src="@/assets/images/pages/about/user.png" alt="Lisa Taylor" class="team-photo">
             <h3>Lisa Taylor</h3>
             <p class="team-title">Head of Operations</p>
             <p class="team-bio">Lisa ensures smooth operations and exceptional service delivery.</p>
