@@ -1,105 +1,131 @@
 <template>
   <div class="home-page">
+    <!-- Hero section with minimalist Teenage Engineering inspired design -->
     <section class="hero-section">
-      <div class="gradient-overlay"></div>
+      <div id="particles-js" class="particles-container"></div>
       <div class="container">
         <div class="hero-content">
-          <div class="welcome-card">
-            <span class="tag-label">Welcome</span>
-            <h1>Tech Solutions <span class="accent-text">That Inspire</span></h1>
-            <p class="hero-subtitle">Connecting visionaries with exceptional tech talent</p>
-            <div class="action-buttons">
-              <router-link to="/find-talent" class="btn btn-primary">
-                <span class="btn-icon">●</span>
-                Discover Talent
-              </router-link>
-              <router-link to="/find-job" class="btn btn-secondary">
-                <span class="btn-icon">○</span>
-                Start Creating
-              </router-link>
+          <div class="te-label">Innovative Tech Solutions</div>
+          <h1>Connect with <span class="accent-text">Expert Talent</span></h1>
+          <p class="hero-subtitle">We help businesses thrive by connecting them with the right technology expertise.</p>
+          <div class="button-group">
+            <router-link to="/find-talent" class="btn btn-primary">Find Talent</router-link>
+            <router-link to="/about" class="btn btn-secondary">Learn More</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <!-- Services section with updated services -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="te-label">Our Services</div>
+          <h2>How We Can <span class="accent-text">Help You</span></h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="te-card">
+            <div class="te-icon icon-primary">01</div>
+            <h3>IT Consulting</h3>
+            <p>Strategic guidance to help your business leverage technology effectively and navigate digital transformation.</p>
+            <router-link to="/services/consulting" class="te-link">Learn More →</router-link>
+          </div>
+
+          <div class="te-card">
+            <div class="te-icon icon-secondary">02</div>
+            <h3>Web Development</h3>
+            <p>Custom web applications and responsive sites built with modern frameworks and performance-focused architecture.</p>
+            <router-link to="/services/web" class="te-link">Explore →</router-link>
+          </div>
+
+          <div class="te-card">
+            <div class="te-icon icon-primary">03</div>
+            <h3>Android/iOS App Development</h3>
+            <p>Native and cross-platform mobile applications designed for exceptional user experience and performance.</p>
+            <router-link to="/services/mobile" class="te-link">Discover →</router-link>
+          </div>
+
+          <div class="te-card">
+            <div class="te-icon icon-secondary">04</div>
+            <h3>Custom AI/ML Services</h3>
+            <p>Intelligent solutions using machine learning and artificial intelligence to transform your business data into insights.</p>
+            <router-link to="/services/ai" class="te-link">Explore AI →</router-link>
+          </div>
+
+          <div class="te-card">
+            <div class="te-icon icon-primary">05</div>
+            <h3>Cloud Solutions</h3>
+            <p>Scalable cloud infrastructure and migration services to optimize performance and reduce operational costs.</p>
+            <router-link to="/services/cloud" class="te-link">Learn More →</router-link>
+          </div>
+
+          <div class="te-card">
+            <div class="te-icon icon-secondary">06</div>
+            <h3>Data Analytics</h3>
+            <p>Comprehensive data analysis and visualization tools to help you make data-driven decisions with confidence.</p>
+            <router-link to="/services/analytics" class="te-link">Discover →</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats section -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="grid grid-4">
+          <div class="te-stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Clients Served</span>
+          </div>
+          <div class="te-stat">
+            <span class="stat-number">1,200+</span>
+            <span class="stat-label">Tech Experts</span>
+          </div>
+          <div class="te-stat">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="te-stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="te-label">Client Success</div>
+          <h2>What Our Clients <span class="accent-text">Say</span></h2>
+        </div>
+        <div class="te-testimonial">
+          <p class="testimonial-quote">Working with this team has transformed our business. Their technology expertise has been invaluable to our growth strategy.</p>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="@/assets/media/pages/about/user.png" alt="Sarah Johnson">
+            </div>
+            <div>
+              <p class="author-name">Sarah Johnson</p>
+              <p class="author-title">CTO, Tech Innovations</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services-section">
+    <!-- CTA section -->
+    <section class="section section-light">
       <div class="container">
-        <span class="section-tag">Our offerings</span>
-        <h2>How can we help you?</h2>
-
-        <div class="services-grid">
-          <div class="service-module">
-            <div class="service-icon consulting">
-              <span>01</span>
-            </div>
-            <h3>Tech Consulting</h3>
-            <p>Strategic advice on digital transformation and technology implementation</p>
-            <router-link to="/services/consulting" class="link-forward">
-              Explore
-              <span class="arrow">→</span>
-            </router-link>
+        <div class="te-cta">
+          <h2>Ready to Transform Your Business?</h2>
+          <p>Connect with our team of experts to achieve your technology goals.</p>
+          <div class="button-group">
+            <router-link to="/contact" class="btn btn-primary">Contact Us</router-link>
+            <router-link to="/find-talent" class="btn btn-secondary">Find Talent</router-link>
           </div>
-
-          <div class="service-module">
-            <div class="service-icon talent">
-              <span>02</span>
-            </div>
-            <h3>Talent Sourcing</h3>
-            <p>Connect with skilled professionals for your next breakthrough project</p>
-            <router-link to="/services/talent" class="link-forward">
-              Explore
-              <span class="arrow">→</span>
-            </router-link>
-          </div>
-
-          <div class="service-module">
-            <div class="service-icon development">
-              <span>03</span>
-            </div>
-            <h3>Custom Development</h3>
-            <p>Tailored software solutions engineered to solve your specific challenges</p>
-            <router-link to="/services/development" class="link-forward">
-              Explore
-              <span class="arrow">→</span>
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonial-section">
-      <div class="container">
-        <div class="testimonial-module">
-          <span class="section-tag">What people say</span>
-          <h2>Client Feedback</h2>
-          <div class="quote-panel">
-            <div class="quote-content">
-              <p>"SmoothTech helped us find the perfect development team. Their talent selection process is unmatched."</p>
-              <div class="author-info">
-                <div class="author-image">
-                  <img src="https://via.placeholder.com/60" alt="Jane Smith">
-                </div>
-                <div class="author-details">
-                  <h4>Jane Smith</h4>
-                  <p>CEO, InnovateTech</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-module">
-          <h2>Ready to transform your tech approach?</h2>
-          <p>Our team is ready to help you navigate the next steps</p>
-          <router-link to="/contact" class="btn btn-highlight">
-            <span class="btn-icon">◆</span>
-            Let's Talk
-          </router-link>
         </div>
       </div>
     </section>
@@ -108,7 +134,106 @@
 
 <script>
 import '@/assets/styles/pages/HomePage.css'
+
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  mounted() {
+    this.initParticles();
+  },
+  methods: {
+    initParticles() {
+      if (!window.particlesJS) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+        script.onload = () => {
+          this.configureParticles();
+        };
+        document.head.appendChild(script);
+      } else {
+        this.configureParticles();
+      }
+    },
+    configureParticles() {
+      window.particlesJS('particles-js', {
+        particles: {
+          number: {
+            value: 200,
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: "#ffffff"
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000"
+            }
+          },
+          opacity: {
+            value: 0.3,
+            random: true,
+            anim: {
+              enable: false
+            }
+          },
+          size: {
+            value: 3,
+            random: true
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200
+            }
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "grab"
+            },
+            onclick: {
+              enable: true,
+              mode: "push"
+            },
+            resize: true
+          },
+          modes: {
+            grab: {
+              distance: 140,
+              line_linked: {
+                opacity: 1
+              }
+            },
+            push: {
+              particles_nb: 4
+            }
+          }
+        },
+        retina_detect: true
+      });
+    }
+  }
 }
 </script>

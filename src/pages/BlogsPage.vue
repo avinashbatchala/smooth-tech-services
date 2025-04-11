@@ -92,7 +92,7 @@
 <script>
 import Banner from '@/components/common/Banner.vue';
 import '@/assets/styles/pages/BlogsPage.css'
-import aiImage from '@/assets/images/pages/blog/ai.png'
+import aiImage from '@/assets/media/pages/blog/ai.png'
 
 export default {
   name: 'BlogsPage',
