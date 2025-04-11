@@ -1,148 +1,137 @@
 <template>
   <div class="about-page">
+    <!-- TE-inspired minimalist header -->
     <section class="page-header">
       <div class="container">
         <div class="hero-content">
-          <span class="hero-tag">About Us</span>
-          <h1>The Team <span class="accent-text">Behind SmoothTech</span></h1>
-          <p class="hero-subtitle">Learn about our mission, vision, and the people driving innovation</p>
+          <div class="te-label">About Us</div>
+          <h1>We're Crafting <span class="accent-text">Digital Solutions</span></h1>
+          <p class="hero-subtitle">A team of technology specialists dedicated to connecting businesses with exceptional talent and innovative solutions.</p>
         </div>
       </div>
     </section>
 
-    <!-- Our Story Section -->
-    <section class="story-section">
+    <!-- Our Story Section with mechanical precision -->
+    <section class="story-section section">
       <div class="container">
+        <div class="section-header">
+          <div class="te-label">Our Journey</div>
+          <h2>The Story <span class="accent-text">Behind Us</span></h2>
+        </div>
         <div class="story-grid">
           <div class="story-content">
-            <span class="section-tag">Our Journey</span>
-            <h2>From Vision to Reality</h2>
-            <p class="story-text">Founded in 2010, SmoothTech began with a simple mission: to bridge the gap between
-              businesses and technology talent. Our team of experts combines deep technical knowledge with business acumen to deliver
-              solutions that drive growth and innovation for our clients.</p>
-            <div class="mission-vision-grid">
-              <div class="mission-card">
-                <div class="card-icon mission-icon">
-                  <span>⭐</span>
-                </div>
-                <h3>Our Mission</h3>
-                <p>To empower businesses through technology and connect talented professionals with
-                  opportunities that advance their careers.</p>
-              </div>
-              <div class="vision-card">
-                <div class="card-icon vision-icon">
-                  <span>🔭</span>
-                </div>
-                <h3>Our Vision</h3>
-                <p>To be the most trusted partner in technology consulting and talent sourcing, known
-                  for our integrity, expertise, and commitment to excellence.</p>
-              </div>
+            <p class="story-text">Founded with a vision to bridge the gap between businesses and technology talent, we've grown from a small team of passionate specialists to an industry-leading consultancy.</p>
+            <p class="story-text">Our approach combines technical expertise with deep industry knowledge, allowing us to deliver solutions that drive real business impact.</p>
+            <div class="story-highlight">
+              <div class="highlight-icon">★</div>
+              <p>We believe in building lasting partnerships with our clients, understanding their unique challenges, and delivering solutions that exceed expectations.</p>
             </div>
           </div>
           <div class="story-image">
-            <img src="@/assets/media/pages/about/team.png" alt="SmoothTech team">
+            <img src="@/assets/media/pages/about/team.png" alt="Our team working together">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Values Section -->
-    <section class="values-section">
+    <!-- Values Section with TE-inspired cards -->
+    <section class="values-section section section-light">
       <div class="container">
-        <span class="section-tag">What Drives Us</span>
-        <h2>Our Core Values</h2>
+        <div class="section-header">
+          <div class="te-label">What Drives Us</div>
+          <h2>Our Core <span class="accent-text">Values</span></h2>
+        </div>
         <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon integrity">
-              <span>01</span>
-            </div>
-            <h3>Integrity</h3>
-            <p>We operate with honesty, transparency, and ethical business practices in all our
-              interactions.</p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon excellence">
-              <span>02</span>
-            </div>
+          <div class="te-value-card">
+            <div class="value-number">01</div>
             <h3>Excellence</h3>
-            <p>We strive for excellence in every aspect of our work, constantly learning and
-              improving our services.</p>
+            <p>We are committed to delivering exceptional quality in everything we do, pushing boundaries and exceeding expectations.</p>
           </div>
-          <div class="value-card">
-            <div class="value-icon innovation">
-              <span>03</span>
-            </div>
+          <div class="te-value-card">
+            <div class="value-number">02</div>
             <h3>Innovation</h3>
-            <p>We embrace change and continuously seek innovative solutions to complex problems.</p>
+            <p>We embrace new technologies and approaches, constantly seeking better ways to solve complex problems.</p>
+          </div>
+          <div class="te-value-card">
+            <div class="value-number">03</div>
+            <h3>Collaboration</h3>
+            <p>We believe in the power of teamwork, bringing together diverse perspectives to create comprehensive solutions.</p>
+          </div>
+          <div class="te-value-card">
+            <div class="value-number">04</div>
+            <h3>Integrity</h3>
+            <p>We operate with transparency and honesty, building trust through our actions and commitments.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
+    <!-- Team Section with mechanical TE-inspired styling -->
+    <section class="team-section section">
       <div class="container">
-        <span class="section-tag">Meet Our Team</span>
-        <h2>Leadership That Inspires</h2>
-        <p class="section-subtitle">Our leadership team brings decades of experience in technology, business strategy, and talent development.</p>
+        <div class="section-header">
+          <div class="te-label">Meet Our Team</div>
+          <h2>Leadership That <span class="accent-text">Inspires</span></h2>
+          <p class="section-subtitle">Our leadership team brings decades of experience in technology, business strategy, and talent development.</p>
+        </div>
 
         <div class="team-grid">
           <div class="team-member">
             <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="John Doe">
+              <img src="@/assets/media/pages/about/user.png" alt="Alex Chen">
             </div>
             <div class="member-info">
-              <h3>John Doe</h3>
+              <h3>Alex Chen</h3>
               <span class="member-role">CEO & Founder</span>
-              <p class="member-bio">John brings over 20 years of experience in technology and business leadership.</p>
+              <p class="member-bio">15+ years experience in tech leadership and digital transformation across multiple industries.</p>
               <div class="social-links">
-                <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-                <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                <a href="#" class="social-link">in</a>
+                <a href="#" class="social-link">tw</a>
               </div>
             </div>
           </div>
 
           <div class="team-member">
             <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="Sarah Johnson">
+              <img src="@/assets/media/pages/about/user.png" alt="Sarah Kim">
             </div>
             <div class="member-info">
-              <h3>Sarah Johnson</h3>
+              <h3>Sarah Kim</h3>
               <span class="member-role">CTO</span>
-              <p class="member-bio">Sarah leads our technical strategy with expertise in emerging technologies.</p>
+              <p class="member-bio">Former principal engineer at leading tech companies with expertise in cloud architecture and AI.</p>
               <div class="social-links">
-                <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-                <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                <a href="#" class="social-link">in</a>
+                <a href="#" class="social-link">gh</a>
               </div>
             </div>
           </div>
 
           <div class="team-member">
             <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="Michael Chen">
+              <img src="@/assets/media/pages/about/user.png" alt="David Nguyen">
             </div>
             <div class="member-info">
-              <h3>Michael Chen</h3>
-              <span class="member-role">Director of Talent</span>
-              <p class="member-bio">Michael oversees our talent acquisition and placement programs.</p>
+              <h3>David Nguyen</h3>
+              <span class="member-role">Head of Talent</span>
+              <p class="member-bio">Specializes in matching technical talent with the right opportunities for maximum impact.</p>
               <div class="social-links">
-                <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-                <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                <a href="#" class="social-link">in</a>
+                <a href="#" class="social-link">tw</a>
               </div>
             </div>
           </div>
 
           <div class="team-member">
             <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="Lisa Taylor">
+              <img src="@/assets/media/pages/about/user.png" alt="Mei Zhang">
             </div>
             <div class="member-info">
-              <h3>Lisa Taylor</h3>
-              <span class="member-role">Head of Operations</span>
-              <p class="member-bio">Lisa ensures smooth operations and exceptional service delivery.</p>
+              <h3>Mei Zhang</h3>
+              <span class="member-role">Engineering Director</span>
+              <p class="member-bio">Expert in software architecture and building high-performing engineering teams.</p>
               <div class="social-links">
-                <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-                <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                <a href="#" class="social-link">in</a>
+                <a href="#" class="social-link">gh</a>
               </div>
             </div>
           </div>
@@ -150,38 +139,38 @@
       </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="about-stats-section">
+    <!-- Stats Section with TE-inspired cards -->
+    <section class="about-stats-section section section-light">
       <div class="container">
         <div class="stats-grid">
           <div class="stat-card">
-            <span class="stat-number">12+</span>
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Clients Worldwide</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">92%</span>
+            <span class="stat-label">Client Retention</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">1,200+</span>
+            <span class="stat-label">Tech Experts</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
             <span class="stat-label">Years of Excellence</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">150+</span>
-            <span class="stat-label">Team Members</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">5</span>
-            <span class="stat-label">Global Offices</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">200+</span>
-            <span class="stat-label">Happy Clients</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="join-cta-section">
+    <!-- CTA Section with TE-inspired minimalism -->
+    <section class="join-cta-section section">
       <div class="container">
         <div class="cta-module">
           <h2>Join Our Growing Team</h2>
           <p>We're always on the lookout for talented individuals who are passionate about technology and innovation</p>
-          <router-link to="/careers" class="btn btn-highlight">
-            <span class="btn-icon">✦</span>
+          <router-link to="/careers" class="btn-highlight">
+            <span class="btn-icon">→</span>
             View Open Positions
           </router-link>
         </div>
