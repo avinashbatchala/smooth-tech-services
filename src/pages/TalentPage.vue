@@ -1,13 +1,15 @@
-<!-- src/pages/TalentPage.vue -->
 <template>
   <div class="talent-page">
+    <!-- TE-inspired minimalist header -->
     <section class="page-header">
       <div class="container">
-        <h1>Find Top Tech Talent</h1>
+        <div class="te-label">Tech Talent Network</div>
+        <h1>Find Top <span class="accent-text">Tech Talent</span></h1>
         <p>Access our network of skilled professionals ready to help your business succeed</p>
       </div>
     </section>
 
+    <!-- Talent overview with TE mechanical aesthetic -->
     <section class="section talent-overview">
       <div class="container">
         <div class="talent-grid">
@@ -31,40 +33,41 @@
             </div>
           </div>
           <div class="talent-image">
-            <img src="https://via.placeholder.com/600x400" alt="Tech professionals collaborating">
+            <img src="@/assets/media/pages/talent/tech-pro-collab.png" alt="Tech professionals collaborating">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Expertise section with TE-inspired cards -->
     <section class="section expertise-section">
       <div class="container">
-        <h2 class="section-title">Our Areas of Expertise</h2>
+        <h2 class="section-title">Our Areas of <span class="accent-text">Expertise</span></h2>
         <div class="grid grid-4">
           <div class="expertise-card">
             <div class="expertise-icon">
-              <i class="icon-software"></i>
+              <i class="icon-software">01</i>
             </div>
             <h3>Software Development</h3>
             <p>Full-stack developers, mobile specialists, and engineers across all modern languages and frameworks.</p>
           </div>
           <div class="expertise-card">
             <div class="expertise-icon">
-              <i class="icon-data"></i>
+              <i class="icon-data">02</i>
             </div>
             <h3>Data & Analytics</h3>
             <p>Data scientists, analysts, engineers, and AI/ML specialists to transform your data into insights.</p>
           </div>
           <div class="expertise-card">
             <div class="expertise-icon">
-              <i class="icon-cloud"></i>
+              <i class="icon-cloud">03</i>
             </div>
             <h3>Cloud & DevOps</h3>
             <p>Architects and engineers specialized in AWS, Azure, GCP, and modern DevOps practices.</p>
           </div>
           <div class="expertise-card">
             <div class="expertise-icon">
-              <i class="icon-product"></i>
+              <i class="icon-product">04</i>
             </div>
             <h3>Product & Design</h3>
             <p>Product managers, UX/UI designers, and researchers focused on creating exceptional digital experiences.</p>
@@ -73,9 +76,10 @@
       </div>
     </section>
 
+    <!-- Process section with TE-inspired mechanics -->
     <section class="section process-section">
       <div class="container">
-        <h2 class="section-title">How It Works</h2>
+        <h2 class="section-title">How It <span class="accent-text">Works</span></h2>
         <div class="process-steps">
           <div class="process-step">
             <div class="step-number">1</div>
@@ -101,16 +105,17 @@
       </div>
     </section>
 
+    <!-- Testimonials section with TE aesthetic -->
     <section class="section testimonials-section">
       <div class="container">
-        <h2 class="section-title">Client Success Stories</h2>
+        <h2 class="section-title">Client Success <span class="accent-text">Stories</span></h2>
         <div class="testimonials-slider">
           <div class="testimonial-card">
             <div class="testimonial-content">
               <p>"SmoothTech helped us build our engineering team from scratch. The quality of talent they provided allowed us to accelerate our product roadmap by months."</p>
             </div>
             <div class="testimonial-author">
-              <img src="https://via.placeholder.com/60x60" alt="Client headshot" class="author-image">
+              <img src="@/assets/media/pages/about/user.png" alt="Client headshot" class="author-image">
               <div class="author-info">
                 <h4>Robert Miller</h4>
                 <p>CTO, FinTech Innovations</p>
@@ -122,7 +127,7 @@
               <p>"We needed specialized expertise in machine learning for a critical project. SmoothTech matched us with the perfect candidate within days, and the results exceeded our expectations."</p>
             </div>
             <div class="testimonial-author">
-              <img src="https://via.placeholder.com/60x60" alt="Client headshot" class="author-image">
+              <img src="@/assets/media/pages/about/user.png" alt="Client headshot" class="author-image">
               <div class="author-info">
                 <h4>Jennifer Chang</h4>
                 <p>VP of Product, DataScape</p>
@@ -133,26 +138,26 @@
       </div>
     </section>
 
+    <!-- CTA section with TE-inspired aesthetic -->
     <section class="section cta-section">
       <div class="container">
-        <Banner type="primary">
+        <div class="te-cta">
           <h2>Ready to find your perfect tech match?</h2>
           <p>Let us help you build the team you need to succeed.</p>
-          <router-link to="/contact" class="btn btn-light mt-3">Request Talent</router-link>
-        </Banner>
+          <div class="button-group">
+            <router-link to="/contact" class="btn btn-primary">Request Talent</router-link>
+            <router-link to="/services" class="btn btn-secondary">Explore Services</router-link>
+          </div>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import Banner from '@/components/common/Banner.vue';
 import '@/assets/styles/pages/TalentPage.css'
 
 export default {
-  name: 'TalentPage',
-  components: {
-    Banner
-  }
+  name: 'TalentPage'
 }
 </script>

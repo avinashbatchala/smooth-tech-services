@@ -17,7 +17,6 @@
       </nav>
 
       <div class="header-actions">
-        <a href="#" class="btn-outline-small">Log In</a>
         <router-link to="/get-started" class="btn btn-primary btn-sm">Get Started</router-link>
       </div>
 

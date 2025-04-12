@@ -1,10 +1,10 @@
-<!-- src/pages/ContactPage.vue -->
 <template>
   <div class="contact-page">
     <section class="page-header">
       <div class="container">
-        <h1>Contact Us</h1>
-        <p>Have a question or want to discuss your needs? Reach out to our team.</p>
+        <div class="te-label">Get In Touch</div>
+        <h1>Contact <span class="accent-text">Our Team</span></h1>
+        <p>Have a question or ready to discuss your project? We're here to help you succeed.</p>
       </div>
     </section>
 
@@ -12,7 +12,10 @@
       <div class="container">
         <div class="contact-grid">
           <div class="contact-form-container">
-            <h2>Send Us a Message</h2>
+            <div class="form-header">
+              <div class="form-label">01</div>
+              <h2>Send Us a Message</h2>
+            </div>
             <form class="contact-form" @submit.prevent="submitForm">
               <div class="form-group">
                 <label for="name">Full Name</label>
@@ -40,33 +43,35 @@
                 <div v-if="errors.email" class="invalid-feedback">{{ errors.email }}</div>
               </div>
 
-              <div class="form-group">
-                <label for="phone">Phone Number (optional)</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    v-model="form.phone"
-                    class="form-control"
-                >
-              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone (optional)</label>
+                  <input
+                      type="tel"
+                      id="phone"
+                      v-model="form.phone"
+                      class="form-control"
+                  >
+                </div>
 
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <select
-                    id="subject"
-                    v-model="form.subject"
-                    class="form-control"
-                    :class="{ 'is-invalid': errors.subject }"
-                    required
-                >
-                  <option value="">Select a subject</option>
-                  <option value="General Inquiry">General Inquiry</option>
-                  <option value="Talent Request">Talent Request</option>
-                  <option value="Job Application">Job Application</option>
-                  <option value="Partnership">Partnership Opportunity</option>
-                  <option value="Other">Other</option>
-                </select>
-                <div v-if="errors.subject" class="invalid-feedback">{{ errors.subject }}</div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select
+                      id="subject"
+                      v-model="form.subject"
+                      class="form-control"
+                      :class="{ 'is-invalid': errors.subject }"
+                      required
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Talent Request">Talent Request</option>
+                    <option value="Job Application">Job Application</option>
+                    <option value="Partnership">Partnership Opportunity</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div v-if="errors.subject" class="invalid-feedback">{{ errors.subject }}</div>
+                </div>
               </div>
 
               <div class="form-group">
@@ -102,13 +107,17 @@
               </button>
             </form>
 
-            <Banner v-if="formSuccess" type="success" class="mt-4">
-              <p class="mb-0">Your message has been sent successfully! We'll get back to you soon.</p>
-            </Banner>
+            <div v-if="formSuccess" class="success-message">
+              <div class="success-icon">✓</div>
+              <p>Your message has been sent successfully! We'll get back to you soon.</p>
+            </div>
           </div>
 
           <div class="contact-info">
-            <h2>Get in Touch</h2>
+            <div class="info-header">
+              <div class="info-label">02</div>
+              <h2>Connect With Us</h2>
+            </div>
 
             <div class="info-card">
               <div class="info-icon">
@@ -116,8 +125,7 @@
               </div>
               <div class="info-content">
                 <h3>Our Office</h3>
-                <p>123 Tech Avenue</p>
-                <p>San Francisco, CA 94105</p>
+                <p>123 Tech Avenue<br>San Francisco, CA 94105</p>
               </div>
             </div>
 
@@ -127,8 +135,8 @@
               </div>
               <div class="info-content">
                 <h3>Phone</h3>
-                <p><a href="tel:+14155550123">(415) 555-0123</a></p>
-                <p>Monday-Friday, 9am-6pm PT</p>
+                <p><a href="tel:+14155550123">(415) 555-0123</a><br>
+                  <span class="info-detail">Monday-Friday, 9am-6pm PT</span></p>
               </div>
             </div>
 
@@ -138,13 +146,13 @@
               </div>
               <div class="info-content">
                 <h3>Email</h3>
-                <p><a href="mailto:info@SmoothTech.com">info@SmoothTech.com</a></p>
-                <p>We'll respond within 24 hours</p>
+                <p><a href="mailto:info@SmoothTech.com">info@SmoothTech.com</a><br>
+                  <span class="info-detail">We'll respond within 24 hours</span></p>
               </div>
             </div>
 
             <div class="social-media">
-              <h3>Connect With Us</h3>
+              <h3>Follow Us</h3>
               <div class="social-icons">
                 <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
                 <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
@@ -157,16 +165,27 @@
       </div>
     </section>
 
-    <section class="section map-section">
+    <section class="map-section">
+      <div class="container">
+        <div class="map-header">
+          <div class="map-label">03</div>
+          <h2>Visit Our Office</h2>
+        </div>
+      </div>
       <div class="map-container">
-        <!-- Placeholder for map -->
         <img src="https://via.placeholder.com/1200x400" alt="Office location map" class="location-map">
+        <div class="map-overlay">
+          <div class="map-pin"></div>
+        </div>
       </div>
     </section>
 
     <section class="section faq-section">
       <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="section-header">
+          <div class="te-label">FAQ</div>
+          <h2>Common <span class="accent-text">Questions</span></h2>
+        </div>
         <div class="faqs">
           <div class="faq-item">
             <h3>How quickly can you provide talent for our project?</h3>
@@ -183,18 +202,27 @@
         </div>
       </div>
     </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="te-cta">
+          <h2>Ready to Get Started?</h2>
+          <p>Let's discuss how we can help you achieve your technology goals.</p>
+          <div class="button-group">
+            <router-link to="/find-talent" class="btn btn-primary">Find Talent</router-link>
+            <router-link to="/services" class="btn btn-secondary">Explore Services</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import Banner from '@/components/common/Banner.vue';
 import '@/assets/styles/pages/ContactPage.css'
 
 export default {
   name: 'ContactPage',
-  components: {
-    Banner
-  },
   data() {
     return {
       form: {
