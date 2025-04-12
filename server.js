@@ -1,14 +1,20 @@
-const express = require('express')
-const path = require('path')
-const history = require('connect-history-api-fallback')
-const serveStatic = require('serve-static')
+// server.js
+import express from 'express';
+import { fileURLToPath } from 'url';
+import path from 'path';
+import history from 'connect-history-api-fallback';
+import serveStatic from 'serve-static';
 
-const app = express()
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
 
 // Handle history mode routing in Vue.js
-app.use(history())
-app.use(serveStatic(path.join(__dirname, 'dist')))
+app.use(history());
+app.use(serveStatic(path.join(__dirname, 'dist')));
 
-const port = process.env.PORT || 8080
-app.listen(port)
-console.log(`Server started on port ${port}`)
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+});
