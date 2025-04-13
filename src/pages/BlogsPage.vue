@@ -98,7 +98,7 @@
 <script>
 import Banner from '@/components/common/Banner.vue';
 import '@/assets/styles/pages/BlogsPage.css'
-import aiImage from '@/assets/media/pages/blog/ai.png'
+import { blogData } from '@/data/blog.js';
 
 export default {
   name: 'BlogsPage',
@@ -112,54 +112,7 @@ export default {
       currentPage: 1,
       itemsPerPage: 9,
       categories: ['Technology', 'Career', 'Industry', 'Leadership'],
-      blogs: [
-        {
-          id: 1,
-          title: 'The Future of AI in Talent Acquisition',
-          author: 'Sarah Johnson',
-          date: '2023-06-15',
-          category: 'Technology',
-          excerpt: 'Exploring how artificial intelligence is transforming the recruitment landscape and what it means for businesses.',
-          image: aiImage
-        },
-        {
-          id: 2,
-          title: '5 Essential Skills for Tech Consultants in 2023',
-          author: 'Michael Chen',
-          date: '2023-05-22',
-          category: 'Career',
-          excerpt: 'A deep dive into the most in-demand skills that technology consultants need to stay competitive in today\'s market.',
-          image: aiImage
-        },
-        {
-          id: 3,
-          title: 'Building Remote Teams That Thrive',
-          author: 'Lisa Taylor',
-          date: '2023-04-10',
-          category: 'Leadership',
-          excerpt: 'Best practices for creating, managing, and nurturing high-performing remote technology teams.',
-          image: aiImage
-        },
-        {
-          id: 4,
-          title: 'Cloud Migration Strategies for Enterprise',
-          author: 'John Doe',
-          date: '2023-03-28',
-          category: 'Technology',
-          excerpt: 'A comprehensive guide to planning and executing successful cloud migrations for large organizations.',
-          image: aiImage
-        },
-        {
-          id: 5,
-          title: 'The Rise of Contract-to-Hire Arrangements',
-          author: 'Michael Chen',
-          date: '2023-02-14',
-          category: 'Industry',
-          excerpt: 'How the contract-to-hire model is changing employment patterns in the tech industry.',
-          image: aiImage
-        },
-        // Additional blog posts would be added here
-      ]
+      blogs: blogData
     };
   },
   computed: {

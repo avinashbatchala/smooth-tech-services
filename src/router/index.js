@@ -6,6 +6,7 @@ import BlogsPage from '../pages/BlogsPage.vue'
 import TalentPage from '../pages/TalentPage.vue'
 import JobsPage from '../pages/JobsPage.vue'
 import ContactPage from '../pages/ContactPage.vue'
+import BlogDetailPage from '@/pages/BlogDetailPage.vue';
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     name: 'Blogs',
     component: BlogsPage,
     meta: { title: 'Blogs - Tech Consulting' }
+  },
+  {
+    path: '/blog/:id',
+    name: 'BlogDetail',
+    component: BlogDetailPage
   },
   {
     path: '/find-talent',
