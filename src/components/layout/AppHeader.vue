@@ -9,11 +9,11 @@
       </div>
 
       <nav class="nav-menu" :class="{ 'active': isMenuOpen }">
-        <router-link to="/about" class="nav-link">About</router-link>
-        <router-link to="/blogs" class="nav-link">Blog</router-link>
-        <router-link to="/find-talent" class="nav-link">Find Talent</router-link>
-        <router-link to="/find-job" class="nav-link">Find Job</router-link>
-        <router-link to="/contact" class="nav-link">Contact</router-link>
+        <router-link to="/about" class="nav-link" @click="closeMenu">About</router-link>
+        <router-link to="/blogs" class="nav-link" @click="closeMenu">Blog</router-link>
+        <router-link to="/find-talent" class="nav-link" @click="closeMenu">Find Talent</router-link>
+        <router-link to="/find-job" class="nav-link" @click="closeMenu">Find Job</router-link>
+        <router-link to="/contact" class="nav-link" @click="closeMenu">Contact</router-link>
       </nav>
 
       <div class="header-actions">
@@ -49,6 +49,12 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
       document.body.classList.toggle('menu-open', this.isMenuOpen);
+    },
+    closeMenu() {
+      if (this.isMenuOpen) {
+        this.isMenuOpen = false;
+        document.body.classList.remove('menu-open');
+      }
     }
   }
 }

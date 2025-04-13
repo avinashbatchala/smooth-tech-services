@@ -67,7 +67,7 @@
           </ul>
         </div>
 
-        <div class="footer-section contact-section">
+        <div class="footer-section">
           <h4>Contact Us</h4>
           <address>
             <p class="contact-line">
