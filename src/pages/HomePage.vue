@@ -27,42 +27,42 @@
             <div class="te-icon icon-primary">01</div>
             <h3>IT Consulting</h3>
             <p>Strategic guidance to help your business leverage technology effectively and navigate digital transformation.</p>
-            <router-link to="/services/consulting" class="te-link">Learn More →</router-link>
+            <router-link to="/find-talent" class="te-link">Learn More →</router-link>
           </div>
 
           <div class="te-card">
             <div class="te-icon icon-secondary">02</div>
             <h3>Web Development</h3>
             <p>Custom web applications and responsive sites built with modern frameworks and performance-focused architecture.</p>
-            <router-link to="/services/web" class="te-link">Explore →</router-link>
+            <router-link to="/find-talent" class="te-link">Learn More →</router-link>
           </div>
 
           <div class="te-card">
             <div class="te-icon icon-primary">03</div>
             <h3>Android/iOS App Development</h3>
             <p>Native and cross-platform mobile applications designed for exceptional user experience and performance.</p>
-            <router-link to="/services/mobile" class="te-link">Discover →</router-link>
+            <router-link to="/find-talent" class="te-link">Learn More →</router-link>
           </div>
 
           <div class="te-card">
             <div class="te-icon icon-secondary">04</div>
             <h3>Custom AI/ML Services</h3>
             <p>Intelligent solutions using machine learning and artificial intelligence to transform your business data into insights.</p>
-            <router-link to="/services/ai" class="te-link">Explore AI →</router-link>
+            <router-link to="/find-talent" class="te-link">Learn More →</router-link>
           </div>
 
           <div class="te-card">
             <div class="te-icon icon-primary">05</div>
             <h3>Cloud Solutions</h3>
             <p>Scalable cloud infrastructure and migration services to optimize performance and reduce operational costs.</p>
-            <router-link to="/services/cloud" class="te-link">Learn More →</router-link>
+            <router-link to="/find-talent" class="te-link">Learn More →</router-link>
           </div>
 
           <div class="te-card">
             <div class="te-icon icon-secondary">06</div>
             <h3>Data Analytics</h3>
             <p>Comprehensive data analysis and visualization tools to help you make data-driven decisions with confidence.</p>
-            <router-link to="/services/analytics" class="te-link">Discover →</router-link>
+            <router-link to="/find-talent" class="te-link">Learn More →</router-link>
           </div>
         </div>
       </div>

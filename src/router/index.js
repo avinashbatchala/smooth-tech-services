@@ -7,6 +7,10 @@ import TalentPage from '../pages/TalentPage.vue'
 import JobsPage from '../pages/JobsPage.vue'
 import ContactPage from '../pages/ContactPage.vue'
 import BlogDetailPage from '@/pages/BlogDetailPage.vue';
+import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage.vue';
+import TermsOfServicePage from "@/pages/TermsOfServicePage.vue";
+import CookiePolicyPage from "@/pages/CookiePolicyPage.vue";
+import SitemapPage from "@/pages/SitemapPage.vue";
 
 const routes = [
   {
@@ -49,6 +53,29 @@ const routes = [
     name: 'Contact',
     component: ContactPage,
     meta: { title: 'Contact Us - Tech Consulting' }
+  },
+  {
+    path: '/privacy',
+    name: 'PrivacyPolicy',
+    component: PrivacyPolicyPage
+  },
+  {
+    path: '/terms',
+    name: 'TermsOfService',
+    component: TermsOfServicePage,
+    meta: { title: 'Terms of Service - Tech Consulting' }
+  },
+  {
+    path: '/cookies',
+    name: 'CookiePolicy',
+    component: CookiePolicyPage,
+    meta: { title: 'Cookie Policy - Tech Consulting' }
+  },
+  {
+    path: '/sitemap',
+    name: 'Sitemap',
+    component: SitemapPage,
+    meta: { title: 'Sitemap - Tech Consulting' }
   }
 ]
 

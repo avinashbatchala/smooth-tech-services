@@ -1,4 +1,9 @@
 import aiImage from '@/assets/media/pages/blog/ai.png';
+import codeImage from '@/assets/media/pages/blog/code.png';
+import zoomImage from '@/assets/media/pages/blog/zoom-call.png';
+import computingImage from '@/assets/media/pages/blog/computing.png';
+import securityImage from '@/assets/media/pages/blog/security.png';
+import aiBotImage from '@/assets/media/pages/blog/ai-bot.png';
 
 export const blogData = [
   {
@@ -61,7 +66,7 @@ export const blogData = [
     date: '2023-05-22',
     category: 'Career',
     excerpt: 'A deep dive into the most in-demand skills that technology consultants need to stay competitive in today\'s market.',
-    image: aiImage,
+    image: codeImage,
     tags: ['Career Development', 'Consulting', 'Tech Skills'],
     content: `<p>The technology consulting landscape continues to evolve rapidly as new technologies emerge and client expectations shift. In 2023, tech consultants need a diverse skill set that combines technical expertise with strong business acumen and interpersonal abilities.</p>
 
@@ -89,7 +94,7 @@ export const blogData = [
     date: '2023-07-10',
     category: 'Leadership',
     excerpt: 'Strategies for tech leaders to develop strong, cohesive teams while navigating the challenges of remote and hybrid work models.',
-    image: aiImage,
+    image: zoomImage,
     tags: ['Remote Work', 'Team Building', 'Leadership', 'Workplace Culture'],
     content: `<p>The shift to remote and hybrid work models has fundamentally changed how technology teams collaborate, communicate, and deliver results. While this transition offers benefits like increased flexibility and broader talent pools, it also presents unique challenges for team cohesion and organizational culture.</p>
 
@@ -144,7 +149,7 @@ export const blogData = [
     date: '2023-08-05',
     category: 'Technology',
     excerpt: 'How edge computing is transforming enterprise application architecture and creating new possibilities for real-time data processing.',
-    image: aiImage,
+    image: computingImage,
     tags: ['Edge Computing', 'IoT', 'Enterprise Architecture', 'Cloud Computing'],
     content: `<p>Edge computing—processing data closer to where it's created rather than sending it to centralized cloud servers—is rapidly moving from an emerging technology to a mainstream approach for enterprise applications. This shift is being driven by the growing demand for real-time processing, reduced latency, and enhanced privacy.</p>
 
@@ -203,7 +208,7 @@ export const blogData = [
     date: '2023-09-12',
     category: 'Industry',
     excerpt: 'Strategic approaches for organizations to address the critical shortage of cybersecurity professionals in an increasingly threatening digital landscape.',
-    image: aiImage,
+    image: securityImage,
     tags: ['Cybersecurity', 'Talent Acquisition', 'Skills Gap', 'Security'],
     content: `<p>The cybersecurity talent gap continues to widen, with an estimated 3.5 million unfilled positions globally. This shortage comes at a time when cyber threats are becoming more sophisticated and frequent, creating significant risks for organizations across all sectors.</p>
 
@@ -273,7 +278,7 @@ export const blogData = [
     date: '2023-10-18',
     category: 'Technology',
     excerpt: 'Practical approaches for building artificial intelligence systems that are not only powerful but also transparent, fair, and accountable.',
-    image: aiImage,
+    image: aiBotImage,
     tags: ['AI Ethics', 'Machine Learning', 'Responsible AI', 'Technology Ethics'],
     content: `<p>As AI systems become more deeply integrated into critical decision-making processes across industries, the ethical implications of these technologies have moved from theoretical concerns to practical imperatives. Developers and organizations building AI solutions now face the challenge of creating systems that are not only technically sound but also align with ethical principles and societal values.</p>
 
