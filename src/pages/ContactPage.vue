@@ -1,13 +1,17 @@
 <template>
   <div class="contact-page">
-    <section class="page-header">
+    <!-- Replace the current page-header in ContactPage.vue -->
+    <section class="hero-section">
       <div class="container">
         <div class="te-label">Get In Touch</div>
         <h1>Contact <span class="accent-text">Our Team</span></h1>
         <p>Have a question or ready to discuss your project? We're here to help you succeed.</p>
+        <div class="button-group">
+          <a href="#contact-form" class="btn btn-primary">Send Message</a>
+          <a href="#contact-info" class="btn btn-secondary">Our Details</a>
+        </div>
       </div>
     </section>
-
     <section class="section contact-section">
       <div class="container">
         <div class="contact-grid">
@@ -173,9 +177,28 @@
         </div>
       </div>
       <div class="map-container">
-        <img src="https://via.placeholder.com/1200x400" alt="Office location map" class="location-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0969562502016!2d-122.39990288483827!3d37.78889791914836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858062c2c9b545%3A0xf5d8593de383d836!2s123%20Tech%20Ave%2C%20San%20Francisco%2C%20CA%2094105!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Office Location Map"
+            class="google-map">
+        </iframe>
         <div class="map-overlay">
-          <div class="map-pin"></div>
+          <div class="map-info">
+            <div class="map-info-icon">
+              <i class="icon-location"></i>
+            </div>
+            <div class="map-info-content">
+              <h3>SmoothTech HQ</h3>
+              <p>123 Tech Avenue<br>San Francisco, CA 94105</p>
+              <a href="https://goo.gl/maps/1234567890" target="_blank" class="map-directions">Get Directions →</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

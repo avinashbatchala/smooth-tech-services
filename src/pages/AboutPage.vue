@@ -1,12 +1,14 @@
 <template>
   <div class="about-page">
     <!-- TE-inspired minimalist header -->
-    <section class="page-header">
+    <section class="hero-section">
       <div class="container">
-        <div class="hero-content">
-          <div class="te-label">About Us</div>
-          <h1>We're Crafting <span class="accent-text">Digital Solutions</span></h1>
-          <p class="hero-subtitle">A team of technology specialists dedicated to connecting businesses with exceptional talent and innovative solutions.</p>
+        <div class="te-label">About Us</div>
+        <h1>Your Technology <span class="accent-text">Partner</span></h1>
+        <p>We combine technical expertise with strategic thinking to deliver solutions that drive business growth.</p>
+        <div class="button-group">
+          <router-link to="/services" class="btn btn-primary">Our Services</router-link>
+          <router-link to="/contact" class="btn btn-secondary">Contact Us</router-link>
         </div>
       </div>
     </section>

@@ -1,10 +1,16 @@
 <!-- src/pages/BlogsPage.vue -->
 <template>
   <div class="blogs-page">
-    <section class="page-header">
+    <!-- Replace the existing page-header section in src/pages/BlogsPage.vue -->
+    <section class="hero-section">
       <div class="container">
-        <h1>Tech Insights</h1>
-        <p>Industry trends, best practices, and thought leadership from our experts</p>
+        <div class="te-label">Tech Insights</div>
+        <h1>Industry <span class="accent-text">Updates</span></h1>
+        <p>Trends, best practices, and thought leadership from our technology experts</p>
+        <div class="button-group">
+          <a href="#latest" class="btn btn-primary">Latest Articles</a>
+          <a href="#categories" class="btn btn-secondary">Browse Categories</a>
+        </div>
       </div>
     </section>
 

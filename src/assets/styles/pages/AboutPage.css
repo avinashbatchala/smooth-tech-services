@@ -10,57 +10,53 @@
   overflow-x: hidden;
 }
 
-/* TE-inspired header with minimalist aesthetic */
-.page-header {
+/* Replace the page-header styles with these: */
+
+/* TE-inspired header with minimalist aesthetic - Updated to match HomePage */
+.hero-section {
   position: relative;
-  min-height: 60vh;
+  padding: calc(var(--space-unit) * 12) 0 calc(var(--space-unit) * 10);
+  background: linear-gradient(120deg, var(--color-accent) 0%, var(--color-dark) 100%);
+  overflow: hidden;
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(120deg, var(--color-accent) 0%, var(--color-dark) 100%);
-  padding: calc(var(--space-unit) * 10) 0;
-  overflow: hidden;
 }
 
-.page-header .hero-content {
+.hero-section .container {
   position: relative;
   z-index: 2;
-  max-width: 38rem;
-  margin: 0 auto;
   text-align: center;
-  padding: calc(var(--space-unit) * 5);
+}
+
+.hero-section .te-label {
+  display: inline-block;
   background: var(--color-primary);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  border-left: 4px solid var(--color-accent);
-  transition: transform var(--transition-standard);
-}
-
-.page-header .hero-content:hover {
-  transform: translateY(-4px);
-}
-
-.page-header .te-label {
-  background: var(--color-accent);
-  color: var(--color-primary);
-  border: none;
+  color: var(--color-accent);
+  border: 1px solid rgba(15, 76, 129, 0.3);
   font-size: 0.7rem;
+  text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: calc(var(--space-unit) * 0.75) calc(var(--space-unit) * 1.75);
-  font-family: var(--font-mono), monospace;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: calc(var(--space-unit) * 3);
   border-radius: var(--radius-sm);
+  margin-bottom: calc(var(--space-unit) * 2);
 }
 
-.page-header h1 {
-  margin-bottom: calc(var(--space-unit) * 2);
-  color: var(--color-dark);
+.hero-section h1 {
+  color: var(--color-primary);
+  font-family: var(--font-display);
   font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: calc(var(--space-unit) * 2);
   letter-spacing: -0.03em;
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
-  line-height: 1.1;
+}
+
+.hero-section p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto calc(var(--space-unit) * 4);
+  line-height: 1.6;
 }
 
 .hero-subtitle {

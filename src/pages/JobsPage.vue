@@ -1,11 +1,16 @@
 <template>
   <div class="jobs-page">
     <!-- Page header with TE-inspired aesthetic -->
-    <section class="page-header">
+    <!-- Replace the current page-header in JobsPage.vue -->
+    <section class="hero-section">
       <div class="container">
-        <div class="te-label">Join Our Team</div>
+        <div class="te-label">Career Opportunities</div>
         <h1>Open <span class="accent-text">Positions</span></h1>
         <p>We're always looking for exceptional talent to join our innovative team</p>
+        <div class="button-group">
+          <a href="#careers" class="btn btn-primary">View Openings</a>
+          <a href="#why-join" class="btn btn-secondary">Why Join Us</a>
+        </div>
       </div>
     </section>
 

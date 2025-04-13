@@ -1,11 +1,15 @@
 <template>
   <div class="talent-page">
     <!-- TE-inspired minimalist header -->
-    <section class="page-header">
+    <section class="hero-section">
       <div class="container">
         <div class="te-label">Tech Talent Network</div>
         <h1>Find Top <span class="accent-text">Tech Talent</span></h1>
         <p>Access our network of skilled professionals ready to help your business succeed</p>
+        <div class="button-group">
+          <router-link to="/contact" class="btn btn-primary">Request Talent</router-link>
+          <router-link to="/services" class="btn btn-secondary">Explore Services</router-link>
+        </div>
       </div>
     </section>
 

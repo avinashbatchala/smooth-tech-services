@@ -4,14 +4,12 @@
     <section class="hero-section">
       <div id="particles-js" class="particles-container"></div>
       <div class="container">
-        <div class="hero-content">
-          <div class="te-label">Innovative Tech Solutions</div>
-          <h1>Connect with <span class="accent-text">Expert Talent</span></h1>
-          <p class="hero-subtitle">We help businesses thrive by connecting them with the right technology expertise.</p>
-          <div class="button-group">
-            <router-link to="/find-talent" class="btn btn-primary">Find Talent</router-link>
-            <router-link to="/about" class="btn btn-secondary">Learn More</router-link>
-          </div>
+        <div class="te-label">Innovative Tech Solutions</div>
+        <h1>Connect with <span class="accent-text">Expert Talent</span></h1>
+        <p>We help businesses thrive by connecting them with the right technology expertise.</p>
+        <div class="button-group">
+          <router-link to="/find-talent" class="btn btn-primary">Find Talent</router-link>
+          <router-link to="/about" class="btn btn-secondary">Learn More</router-link>
         </div>
       </div>
     </section>

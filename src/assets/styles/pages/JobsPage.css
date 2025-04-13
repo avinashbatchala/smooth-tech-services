@@ -9,48 +9,6 @@
 }
 
 /* Page header with TE-inspired minimalism */
-.page-header {
-  position: relative;
-  padding: calc(var(--space-unit) * 12) 0 calc(var(--space-unit) * 10);
-  background: linear-gradient(120deg, var(--color-accent) 0%, var(--color-dark) 100%);
-  overflow: hidden;
-}
-
-.page-header .container {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.page-header .te-label {
-  display: inline-block;
-  background: var(--color-primary);
-  color: var(--color-accent);
-  border: 1px solid rgba(15, 76, 129, 0.3);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: calc(var(--space-unit) * 0.75) calc(var(--space-unit) * 1.75);
-  border-radius: var(--radius-sm);
-  margin-bottom: calc(var(--space-unit) * 2);
-}
-
-.page-header h1 {
-  color: var(--color-primary);
-  font-family: var(--font-display), serif;
-  font-weight: 700;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: calc(var(--space-unit) * 2);
-  letter-spacing: -0.03em;
-}
-
-.page-header p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
 
 /* TE-inspired careers section */
 .careers-section {
