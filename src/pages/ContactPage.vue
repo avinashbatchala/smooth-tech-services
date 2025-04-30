@@ -129,7 +129,7 @@
               </div>
               <div class="info-content">
                 <h3>Our Office</h3>
-                <p>123 Tech Avenue<br>San Francisco, CA 94105</p>
+                <p>26 Oak Street<br>Jersey City, NJ 07304</p>
               </div>
             </div>
 
@@ -178,7 +178,7 @@
       </div>
       <div class="map-container">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0969562502016!2d-122.39990288483827!3d37.78889791914836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858062c2c9b545%3A0xf5d8593de383d836!2s123%20Tech%20Ave%2C%20San%20Francisco%2C%20CA%2094105!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.6034143430455!2d-74.0669242!3d40.728683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b24e068b13%3A0x93f0fc83abffce6e!2s26%20Oak%20St%2C%20Jersey%20City%2C%20NJ%2007304!5e0!3m2!1sen!2sus!4v1746025217654!5m2!1sen!2sus"
             width="100%"
             height="100%"
             style="border:0;"
@@ -195,8 +195,8 @@
             </div>
             <div class="map-info-content">
               <h3>SmoothTech HQ</h3>
-              <p>123 Tech Avenue<br>San Francisco, CA 94105</p>
-              <a href="https://goo.gl/maps/1234567890" target="_blank" class="map-directions">Get Directions →</a>
+              <p>26 Oak Street<br>Jersey City, NJ 07304</p>
+              <a href="https://goo.gl/maps/3kYnDqG7UWU38vWq9" target="_blank" class="map-directions">Get Directions →</a>
             </div>
           </div>
         </div>

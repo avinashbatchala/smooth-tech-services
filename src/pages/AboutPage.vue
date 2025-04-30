@@ -36,6 +36,42 @@
       </div>
     </section>
 
+    <!-- Vision and Goals Section -->
+    <section class="vision-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="te-label">Looking Forward</div>
+          <h2>Our Vision & <span class="accent-text">Goals</span></h2>
+        </div>
+        <div class="vision-grid">
+          <div class="vision-content">
+            <h3>Our Vision</h3>
+            <p>To become the industry standard for technology excellence, empowering businesses to achieve digital transformation with confidence and clarity.</p>
+            <div class="vision-highlight">
+              <div class="highlight-icon">⟶</div>
+              <p>We envision a future where technology is an enabler for all organizations, regardless of size or industry.</p>
+            </div>
+          </div>
+          <div class="goals-content">
+            <h3>Strategic Goals</h3>
+            <ul class="goals-list">
+              <li class="goal-item">
+                <span class="goal-marker">01</span>
+                <p>Expand our talent network to 2,000+ specialists across emerging technologies</p>
+              </li>
+              <li class="goal-item">
+                <span class="goal-marker">02</span>
+                <p>Pioneer innovative staffing models that adapt to evolving business needs</p>
+              </li>
+              <li class="goal-item">
+                <span class="goal-marker">03</span>
+                <p>Establish technology partnerships that offer clients exclusive access to cutting-edge solutions</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Values Section with TE-inspired cards -->
     <section class="values-section section section-light">
       <div class="container">
@@ -79,9 +115,6 @@
 
         <div class="team-grid">
           <div class="team-member">
-            <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="Alex Chen">
-            </div>
             <div class="member-info">
               <h3>Alex Chen</h3>
               <span class="member-role">CEO & Founder</span>
@@ -94,9 +127,6 @@
           </div>
 
           <div class="team-member">
-            <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="Sarah Kim">
-            </div>
             <div class="member-info">
               <h3>Sarah Kim</h3>
               <span class="member-role">CTO</span>
@@ -109,9 +139,6 @@
           </div>
 
           <div class="team-member">
-            <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="David Nguyen">
-            </div>
             <div class="member-info">
               <h3>David Nguyen</h3>
               <span class="member-role">Head of Talent</span>
@@ -124,9 +151,6 @@
           </div>
 
           <div class="team-member">
-            <div class="member-image">
-              <img src="@/assets/media/pages/about/user.png" alt="Mei Zhang">
-            </div>
             <div class="member-info">
               <h3>Mei Zhang</h3>
               <span class="member-role">Engineering Director</span>

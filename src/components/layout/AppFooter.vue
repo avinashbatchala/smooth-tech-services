@@ -72,7 +72,7 @@
           <address>
             <p class="contact-line">
               <span class="contact-icon">📍</span>
-              123 Tech Street<br>Silicon Valley, CA 94043
+              26 Oak Street<br>Jersey City, NJ 07304
             </p>
             <p class="contact-line">
               <span class="contact-icon">✉️</span>
@@ -80,7 +80,7 @@
             </p>
             <p class="contact-line">
               <span class="contact-icon">📞</span>
-              <a href="tel:+11234567890">(123) 456-7890</a>
+              <a href="tel:+14155550123">(415) 555-0123</a>
             </p>
           </address>
         </div>
