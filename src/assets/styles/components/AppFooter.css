@@ -178,23 +178,6 @@
   gap: calc(var(--space-unit) * 1.5);
 }
 
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(var(--space-unit) * 4.5);
-  height: calc(var(--space-unit) * 4.5);
-  border-radius: var(--radius-sm);
-  background-color: var(--color-gray-10);
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: all var(--transition-standard);
-  font-size: 0.875rem;
-  font-weight: 600;
-  font-family: var(--font-mono);
-  border: 1px solid var(--color-gray-20);
-}
-
 .social-icon:hover {
   background: var(--color-accent);
   color: var(--color-primary);
