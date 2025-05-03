@@ -158,10 +158,18 @@
             <div class="social-media">
               <h3>Follow Us</h3>
               <div class="social-icons">
-                <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
-                <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
-                <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn" class="social-icon">
+                  <span class="icon">in</span>
+                </a>
+                <a href="#" aria-label="Twitter" class="social-icon">
+                  <span class="icon">𝕏</span>
+                </a>
+                <a href="#" aria-label="GitHub" class="social-icon">
+                  <span class="icon">gh</span>
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                  <span class="icon">ig</span>
+                </a>
               </div>
             </div>
           </div>

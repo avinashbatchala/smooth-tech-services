@@ -68,28 +68,14 @@
 
 .social-icons {
   display: flex;
-  gap: calc(var(--space-unit) * 2);
-  margin-top: calc(var(--space-unit) * 2);
+  gap: calc(var(--space-unit) * 1.5);
 }
 
-.social-icons a {
-  width: 36px;
-  height: 36px;
-  background: var(--color-primary);
-  color: var(--color-accent);
-  border: 1px solid var(--color-accent);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  transition: all var(--transition-standard);
-}
-
-.social-icons a:hover {
+.social-icon:hover {
   background: var(--color-accent);
   color: var(--color-primary);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 /* Enhanced map section styling */
@@ -525,32 +511,6 @@ textarea.form-control {
   font-weight: 600;
   color: var(--color-dark);
   margin-bottom: calc(var(--space-unit) * 2);
-}
-
-.social-icons {
-  display: flex;
-  gap: calc(var(--space-unit) * 2);
-}
-
-.social-icons a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-gray-10);
-  color: var(--color-accent);
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--color-gray-20);
-  font-size: 1.2rem;
-  transition: all var(--transition-standard);
-}
-
-.social-icons a:hover {
-  background: var(--color-accent);
-  color: var(--color-primary);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-sm);
 }
 
 /* TE-inspired map section */
